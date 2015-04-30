@@ -1,0 +1,3 @@
+https://www.twilio.com/docs/python/install
+https://www.udacity.com/course/viewer#!/c-ud036/l-991551862/m-3642419135
+https://s3.amazonaws.com/udacity-hosted-downloads/ud036/How+to+install+Twilio+on+Windows.pdf
