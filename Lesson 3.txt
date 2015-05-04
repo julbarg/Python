@@ -1,0 +1,7 @@
+New Vocabulary Words
+	- Class
+	- Instance
+	- Constructor __init__
+	- Self self
+	- Instance Variables
+	- Instance Method
