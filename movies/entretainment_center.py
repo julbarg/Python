@@ -31,7 +31,25 @@ saw = media.Movie("Saw",
                   "https://www.youtube.com/watch?v=S-1QgOMQ-ls")
 
 movies = [toy_story, avatar, fight_club, avengers, insidious, saw]
-fresh_tomatoes.open_movies_page(movies)
+#fresh_tomatoes.open_movies_page(movies)
+#print (media.Movie.VALID_RATINGS)
+print("Doc")
+print(media.Movie.__doc__)
+print("Dict")
+print(media.Movie.__dict__)
+print("Name")
+print(media.Movie.__name__)
+print("Bases")
+print(media.Movie.__bases__)
+print("Module")
+print(media.Movie.__module__)
+
+
+		
+			
+			
+				
+		
 
 
 
