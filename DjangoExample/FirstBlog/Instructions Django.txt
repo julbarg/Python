@@ -1,0 +1,37 @@
+django-admin startproject FirstBlog
+python manage.py startapp blog
+
+brew install mysql
+easy_install mysql-python
+pip install mysql-python
+
+mysqld_safe --skip-grant-tables #let anyone have full permissions
+mysql -u root
+UPDATE mysql.user SET Password=PASSWORD('nettuts') WHERE User='root'; #give the user 'root' a password
+FLUSH PRIVILEGES;
+mysql -u root -p #log in with our password 'nettuts'
+CREATE DATABASE firstblog;
+
+python manage.py syncdb
+Would you like to create one now? (yes/no): yes
+Username (leave blank to use 'jbarragan'): jbarragan
+Email address: julbarg@gmail.com
+Password: Ibague900228
+Password (again): Ibague900228
+Superuser created successfully.
+
+views.py
+	from django.shortcuts import render_to_response
+	from blog.models import post
+
+	def home(request):
+		retunr render_to_response('index.html')
+		
+url.py
+	from blog import views	
+	url(r'^$', views.home, name='home'),
+	
+settings.py
+	TEMPLATE_DIRS = (
+		"blog/templates",
+	)
