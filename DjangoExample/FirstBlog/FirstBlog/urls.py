@@ -19,5 +19,6 @@ from blog import views
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     url(r'^$', views.home, name='home'),
 ]
